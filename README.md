@@ -1,14 +1,5 @@
-# Welcome to your CDK TypeScript project
+# dql-lambda
 
-This is a blank project for CDK development with TypeScript.
+Um lambda com uma dlq só enviará mensagens para a dlq caso o produtor da mensagem seja assíncrono (SNS, S3, SES, CloudWatch Logs, EventBridge, CodeCommit, Config)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+Para testar envie a mensagem `fail` no SNS
